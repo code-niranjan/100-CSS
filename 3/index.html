@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* body{
+            display: flex;
+            justify-content: center;
+        } */
+        .card{
+            width: 400px;
+            
+            border: 2px solid black;
+            background-color: #d7d7d7;
+            background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+            border-radius: 10px;
+        }
+
+        .card-thumbnail{
+            width: 90%;
+            height: 50%;
+            border: 2px solid grey;
+            overflow: hidden;
+            margin: 20px;
+            border-radius: 25px;
+        }
+
+        .responsive{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .card-body{
+            width: 90%;
+            border: 2px solid transparent;
+            margin: 20px;
+            display: flex;
+        }
+        .card-avatar{
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+            margin-left: 5px;
+            margin-top: 5px;
+            background-image: url(./cat.avif);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+        .card-details{
+            color: white;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .card-details h3{
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+        .card-details p{
+            margin-left: 10px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+        .card-stats{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            visibility: hidden;
+            transition: visibility 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+            opacity: 0;
+        }
+
+        .card-body:hover .card-stats{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-thumbnail:hover .card-stats{
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-thumbnail">
+                <img src="./vally.png" alt="vally_img" class="responsive">
+            </div>
+            <div class="card-body">
+                <div class="card-avatar">
+                    <!-- <img src="./cat.avif" alt="cat_img"> -->
+                </div>
+                <div class="card-details">
+                    <h3>AbStract Gradient Project</h3>
+                    <p>Scrimsbee MsScrimslee</p>
+                    <ul class="card-stats">
+                        <li><i class="fa fa-heart"></i> 8</li>
+                        <li><i class="fa-solid fa-comment"></i> 32</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
