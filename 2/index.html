@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        .container{
+            height: 50vh;
+            border: 1px solid black;
+        }
+
+        .search-bar{
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 150px;
+            transition: width 0.5s ease-in;
+        }
+
+        .search-bar::placeholder {
+            color: grey; /* Initial placeholder color */
+            transition: color 0.8s ease; /* Transition on color */
+        }
+
+        .search-bar:focus {
+            outline: none;
+            width: 75%;
+            border: 1px solid blue;
+        }
+
+        .search-bar:focus::placeholder {
+            color: transparent; /* Makes the placeholder text invisible */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="search" class="search-bar"  
+        id="search-field" placeholder="Search...">
+    </div>
+</body>
+</html>
