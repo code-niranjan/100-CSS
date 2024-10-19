@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100vh;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 360px;
+            animation-name: bounse;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounse{
+            0%{
+               margin-top: 10%; 
+            }
+            50%{
+                margin-top: 50%;
+            }
+            75%{
+                margin-top: 45%;
+            }
+            100%{
+                margin-top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
