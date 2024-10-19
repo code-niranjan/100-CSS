@@ -1,0 +1,38 @@
+.container{
+    height: 50%;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.button-border{
+    width: 300;
+    height: 100;
+    border: 6px solid transparent;
+    border-image: linear-gradient(-115deg, #eeaf61, #fb9062,#ee5d6c,#ce4993,#6a0d83) 1;
+}  
+
+button{
+    width: 300px;
+    height: 100px;
+    font-size: 2em;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 229, 229);
+}
+
+.button-border:active{
+    border: 8px solid transparent;
+    border-image: linear-gradient(115deg, #eeaf61, #fb9062,#ee5d6c,#ce4993,#6a0d83) 1;
+}
+
+/* .button-border:active{
+    transform: scaleX(-1);
+} */
+
+button:active{
+    color: grey;
+    font-size: 2.1em;
+}
