@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Define the keyframes for the animation */
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+
+    /* Apply the animation to an element */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      /* Animation properties */
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  </style>
+  <title>CSS Animation Example</title>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
