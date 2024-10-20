@@ -1,0 +1,34 @@
+
+body{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.flag-france{
+    border: 1px solid black;
+    width: 450px;
+    height: 300px;
+    display: flex;
+}
+
+.stripe{
+    border: 1px solid black;
+    height: 100%;
+    width: 33.33%;
+}
+.blue-stripe{
+    background-color: #0055A4;
+}
+.white-stripe{
+background-color: white;
+}
+.red-stripe{
+    background-color: #EF4135;
+}
+.flag-name{
+    display: flex;
+    justify-content: center;
+}
